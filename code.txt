@@ -1,0 +1,25 @@
+
+        final Button b = (Button)findViewById(R.id.btn);
+        b.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                final TextView lbl = (TextView) findViewById(R.id.lblNome);
+                final EditText textoNome = (EditText)findViewById(textoNome);
+                String nome = textoNome.getText().toString();
+                lbl.setText(nome);
+
+                final TextView lbl1 = (TextView) findViewById(R.id.lblGestor);
+                final EditText textoGestor = (EditText)findViewById(textoGestor);
+                String gestor = textoGestor.getText().toString();
+                lbl1.setText(gestor);
+
+                final TextView lbl2 = (TextView) findViewById(R.id.lblRegistro);
+                final EditText textoRegistro = (EditText)findViewById(textoRegistro);
+                String registro = textoRegistro.getText().toString();
+                lbl2.setText(registro);
+
+                final TextView lbl3 = (TextView) findViewById(R.id.lblFeedback);
+                final EditText textoFeedback = (EditText)findViewById(textoFeedback);
+                String feedback = textoFeedback.getText().toString();
+                lbl3.setText(feedback);
+            }
+        });
